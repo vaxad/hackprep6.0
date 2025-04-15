@@ -9,8 +9,13 @@
       <p id="description">Never use an insecure password again.</p>
       <button onclick="generate_password()">Generate Passwords</button>
       <hr />
-      <div id="container">
-        <p id="password_1_el" class="output_display"></p>
+      <div class="result_container">
+        <div id="container">
+          <p id="password_1_el" class="output_display"></p>
+        </div>
+        <button onclick="copyToClipboard()" class="fa-solid fa-house">
+          Copy To Clipboard
+        </button>
       </div>
     </div>
     <script src="index.js"></script>

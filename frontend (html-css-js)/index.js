@@ -110,3 +110,9 @@ function generate_password() {
   }
   password_1_El.textContent = password_1;
 }
+
+function copyToClipboard() {
+  const password = password_1_El.textContent;
+  navigator.clipboard.writeText(password);
+  alert("Password copied!!");
+}
